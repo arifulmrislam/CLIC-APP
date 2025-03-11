@@ -6,6 +6,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import logo from "../assets/CLIC__1_-removebg-preview.png";
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -34,11 +35,9 @@ export default function Login() {
         <div className="grid min-h-screen grid-cols-1 lg:grid-cols-1">
             <div className="flex items-center justify-center bg-gray-100 p-6 dark:bg-gray-800 lg:p-12">
                 <div className="w-full max-w-md space-y-6">
+                    <img src={logo} alt="Logo" height="25" className="logo logo-dark ml-40" />
                     <h1 className="text-3xl font-bold text-center mb-18">Admin Login</h1>
                     <Tabs defaultValue="login" className="w-full">
-                        {/* <TabsList className="grid w-full grid-cols-1">
-                            <TabsTrigger value="login">Login</TabsTrigger>
-                        </TabsList> */}
                         <TabsContent value="login">
                             <form className="space-y-4" onSubmit={handleLogin}>
                                 <div className="space-y-2">
