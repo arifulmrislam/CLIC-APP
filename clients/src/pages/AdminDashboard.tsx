@@ -7,6 +7,7 @@ import { FaBars, FaEdit } from 'react-icons/fa';
 import { SiGnuprivacyguard } from 'react-icons/si';
 import { FcApprove } from 'react-icons/fc';
 import { MdEventNote } from 'react-icons/md';
+import { TbLogout } from "react-icons/tb";
 
 export default function AdminDashboard() {
     const navigate = useNavigate();
@@ -37,7 +38,7 @@ export default function AdminDashboard() {
                     <FaBars />
                 </button>
 
-                <ul className='space-y-4 mt-24'>
+                <ul className='space-y-4 mt-8'>
                     <li className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'>
                         <SiGnuprivacyguard className='w-6 h-6 min-w-[24px] min-h-[24px] flex-shrink-0' />
                         {!sidebarCollapsed && (
@@ -66,6 +67,13 @@ export default function AdminDashboard() {
                             <span className='ml-4 whitespace-nowrap'>Edit Event</span>
                         )}
                     </li>
+                    <li className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300 mt-150'>
+                        <TbLogout className='w-6 h-6 min-w-[24px] min-h-[24px] flex-shrink-0' />
+                        {!sidebarCollapsed && (
+                            <span onClick={handleLogout} 
+                            className='ml-4 whitespace-normal'>Logout</span>
+                        )}
+                    </li>
                 </ul>
             </div>
 
@@ -92,7 +100,7 @@ export default function AdminDashboard() {
                     </div>
                 </div>
 
-                <div className='flex-1 p-6'>
+                <div className='flex-1 p-10'>
                     <h1 className='text-2xl font-bold'>Admin Dashboard</h1>
                     <p>Welcome, Admin! Manage users and settings here.</p>
                 </div>
