@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Outlet } from 'react-router-dom';
 import { isAuthenticated, logoutAdmin } from '@/context/auth';
 import { Button } from '@/components/ui/button';
 import { FaBars, FaEdit } from 'react-icons/fa';
@@ -39,7 +39,10 @@ export default function AdminDashboard() {
                 </button>
 
                 <ul className='space-y-4 mt-8'>
-                    <li className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'>
+                    <li
+                        onClick={() => navigate('/admin-dashboard/user-sign-up-approval')}
+                        className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'
+                    >
                         <SiGnuprivacyguard className='w-6 h-6 min-w-[24px] min-h-[24px] flex-shrink-0' />
                         {!sidebarCollapsed && (
                             <span className='ml-4 whitespace-nowrap'>
@@ -47,7 +50,10 @@ export default function AdminDashboard() {
                             </span>
                         )}
                     </li>
-                    <li className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'>
+                    <li
+                        onClick={() => navigate('/admin-dashboard/approve-event-users')}
+                        className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'
+                    >
                         <FcApprove className='w-6 h-6 min-w-[24px] min-h-[24px] flex-shrink-0' />
                         {!sidebarCollapsed && (
                             <span className='ml-4 whitespace-nowrap'>
@@ -55,13 +61,19 @@ export default function AdminDashboard() {
                             </span>
                         )}
                     </li>
-                    <li className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'>
+                    <li
+                        onClick={() => navigate('/admin-dashboard/create-event')}
+                        className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'
+                    >
                         <MdEventNote className='w-6 h-6 min-w-[24px] min-h-[24px] flex-shrink-0' />
                         {!sidebarCollapsed && (
                             <span className='ml-4 whitespace-nowrap'>Create Event</span>
                         )}
                     </li>
-                    <li className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'>
+                    <li
+                        onClick={() => navigate('/admin-dashboard/edit-event')}
+                        className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300'
+                    >
                         <FaEdit className='w-6 h-6 min-w-[24px] min-h-[24px] flex-shrink-0' />
                         {!sidebarCollapsed && (
                             <span className='ml-4 whitespace-nowrap'>Edit Event</span>
@@ -70,8 +82,8 @@ export default function AdminDashboard() {
                     <li className='flex items-center p-2 cursor-pointer font-semibold transition-all duration-300 mt-150'>
                         <TbLogout className='w-6 h-6 min-w-[24px] min-h-[24px] flex-shrink-0' />
                         {!sidebarCollapsed && (
-                            <span onClick={handleLogout} 
-                            className='ml-4 whitespace-normal'>Logout</span>
+                            <span onClick={handleLogout}
+                                className='ml-4 whitespace-normal'>Logout</span>
                         )}
                     </li>
                 </ul>
@@ -101,8 +113,7 @@ export default function AdminDashboard() {
                 </div>
 
                 <div className='flex-1 p-10'>
-                    <h1 className='text-2xl font-bold'>Admin Dashboard</h1>
-                    <p>Welcome, Admin! Manage users and settings here.</p>
+                    <Outlet />
                 </div>
             </div>
         </div>
