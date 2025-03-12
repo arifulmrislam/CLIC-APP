@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { useNavigate, Outlet } from 'react-router-dom';
+import { useNavigate, Outlet, useLocation } from 'react-router-dom'; // Import useLocation
 import { isAuthenticated, logoutAdmin } from '@/context/auth';
 import { Button } from '@/components/ui/button';
 import { FaBars, FaEdit } from 'react-icons/fa';
@@ -11,6 +11,7 @@ import { TbLogout } from "react-icons/tb";
 
 export default function AdminDashboard() {
     const navigate = useNavigate();
+    const location = useLocation(); // Get the current location
     const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
     const [showLogout, setShowLogout] = useState(false);
 
@@ -24,6 +25,9 @@ export default function AdminDashboard() {
         logoutAdmin();
         navigate('/login');
     };
+
+
+    const isBaseRoute = location.pathname === '/admin-dashboard';
 
     return (
         <div className='flex h-screen'>
@@ -113,6 +117,12 @@ export default function AdminDashboard() {
                 </div>
 
                 <div className='flex-1 p-10'>
+                    {isBaseRoute && (
+                        <div className='p-10'>
+                            <h1 className='text-2xl font-bold'>Admin Dashboard</h1>
+                            <p>Welcome, Admin! Manage users and settings here.</p>
+                        </div>
+                    )}
                     <Outlet />
                 </div>
             </div>
