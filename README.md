@@ -21,10 +21,6 @@
 
 ## 📸 Screenshots
 
-| Login | Dashboard | Members | Pools |
-|-------|-----------|---------|-------|
-| ![Login](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/admin-login.png) | ![Dashboard](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/admin-dashboard.png) | ![Members](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/member-list.png) | ![Pools](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/pool-list.png) |
-
 | Login | Dashboard |
 |-------|-----------|
 | ![Login](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/admin-login.png) | ![Dashboard](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/admin-dashboard.png) |
@@ -32,6 +28,10 @@
 | Members | Pools |
 |---------|-------|
 | ![Members](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/member-list.png) | ![Pools](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/pool-list.png) |
+
+| Create | Edit |
+|---------|-------|
+| ![Create](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/create-pool.png) | ![Edit](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/edit-pool.png) |
 ---
 
 ## 🛠️ Tech Stack
