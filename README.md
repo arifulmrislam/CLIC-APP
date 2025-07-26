@@ -23,7 +23,7 @@
 
 | Login | Dashboard | Members | Pools |
 |-------|-----------|---------|-------|
-| ![Login](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/admin-login.png) | ![Dashboard](https://i.imgur.com/2a.png) | ![Members](https://i.imgur.com/3a.png) | ![Pools](https://i.imgur.com/4a.png) |
+| ![Login](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/admin-login.png) | ![Dashboard](https://github.com/arifulmrislam/CLIC-APP/blob/main/clients/src/assets/admin-dashboard.png) | ![Members](https://i.imgur.com/3a.png) | ![Pools](https://i.imgur.com/4a.png) |
 
 
 ---
