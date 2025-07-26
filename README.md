@@ -18,3 +18,12 @@
 > ⚠️ Note: Backend / API code is **not** present in this repository, so it operates as a frontend client connecting to a separate API.
 
 ---
+
+## 📸 Screenshots
+
+| Login | Dashboard | Members | Pools |
+|-------|-----------|---------|-------|
+| ![Login](https://i.imgur.com/1a.png) | ![Dashboard](https://i.imgur.com/2a.png) | ![Members](https://i.imgur.com/3a.png) | ![Pools](https://i.imgur.com/4a.png) |
+
+
+---
