@@ -132,12 +132,7 @@ Frontend Developer & Full‑Stack Enthusiast
 
 ℹ️ Notes & To Do
 📄 No README or documentation is present in the repo as of July 2025 
-GitHub
-+6
-GitHub
-+6
-GitHub
-+6
+
 
 ⚠️ Backend code is absent—if this is a full-stack app, the server-side must be included or documented separately.
 
@@ -150,11 +145,5 @@ Screenshots or demo links for UI clarity
 Dependency list or badge metrics (npm version, build status)
 
 License file and contribution code of conduct
-
-🧭 Badges (Add to top of README)
-
-![TypeScript](https://img.shields.io/badge/TypeScript‑4.x-blue)
-![Vite](https://img.shields.io/badge/Vite‑3.x-purple)
-Include build/lint coverage or GitHub Actions badges if CI is configured.
 
 
