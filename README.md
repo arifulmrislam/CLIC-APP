@@ -80,7 +80,8 @@ Components and pages: Logical separation of UI features
 Services folder (if exists): API fetch logic
 
 Public/: Static images or favicon
-
+```
+---
 ⚙️ Usage Examples
 Login Flow
 Navigate to the login page
@@ -100,11 +101,13 @@ List, view, approve/reject members
 Create, duplicate, cancel or manage pools/events
 
 These flows depend on API endpoints and service implementations within src/services.
+---
 
 🚢 Deployment
 Push to main branch
 GitHub Action auto-deploys to Vercel
 Environment variables (if any) are set in Vercel dashboard
+---
 
 🤝 Contributions
 Thank you for your interest in contributing! Please follow these guidelines:
@@ -118,10 +121,10 @@ Submit a pull request describing your changes and their scope.
 Ensure existing functionality is maintained; add new components or routes in appropriate folders.
 
 Code style: use TypeScript types, consistent formatting (Prettier/ESLint recommended).
-
+---
 📜 License
 This repository does not include a license file. Please add a LICENSE (e.g. MIT) if you want to open-source distribution—otherwise usage terms remain undefined.
-
+---
 
 📫 Author / Contact
 Ariful Islam Arif
@@ -129,6 +132,7 @@ Frontend Developer & Full‑Stack Enthusiast
 📍 McKinney, Texas
 📧 ariful.mr.islam@gmail.com 
 
+---
 
 ℹ️ Notes & To Do
 📄 No README or documentation is present in the repo as of July 2025 
