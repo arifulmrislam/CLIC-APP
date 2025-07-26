@@ -82,9 +82,9 @@ Services folder (if exists): API fetch logic
 Public/: Static images or favicon
 ```
 ---
-⚙️ Usage Examples
-Login Flow
-Navigate to the login page
+
+---
+⚙️ Usage Examples Login Flow Navigate to the login page
 
 Enter credentials – the app likely sends them via a POST request to /api/auth/login
 
