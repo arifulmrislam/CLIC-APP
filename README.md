@@ -81,7 +81,6 @@ Services folder (if exists): API fetch logic
 
 Public/: Static images or favicon
 ```
----
 
 ---
 ⚙️ Usage Examples Login Flow Navigate to the login page
